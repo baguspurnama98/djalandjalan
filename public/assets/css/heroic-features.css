@@ -1,0 +1,244 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  padding-top: 2 px;
+  background-color: #faf5e7;
+  font-family: OpenSans-Reguler !important;
+  
+}
+a {
+  text-decoration: none !important;
+  color: #35405a;
+}
+
+.area-banner {
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  background-position: top;
+  background-image: url("../assets/img/image1.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+}
+.home-img {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 75%;
+  background-position: center center;
+}
+
+.title-page{
+  position: absolute;
+  top: 0;
+  bottom : 0 ;
+  right: 0;
+  left:0;
+  rgba:(0,0,0,.5);
+  color:#fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin-bottom: 2%;
+ 
+}
+.title-page h3{
+  font-size: 100px;
+  font-family: Baloo;
+  line-height: 50px
+}
+
+.img-line{
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  background-position: center;
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/img/grupo.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+}
+.grid-explore{
+  margin-bottom: 10px;
+}
+.btn-ijo {
+  background-color: #2ed1a2;
+  color: white;
+}
+.overlay-bg{
+  position: absolute;
+  top: 0;
+  bottom : 0 ;
+  right: 0;
+  left:0;
+  rgba:(0,0,0,.5);
+  color:#fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.overlay-bg p{
+  font-family: Baloo;
+  font-size: 25px;
+}
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+@font-face {
+  font-family: Baloo;
+  src: url(../fonts/Baloo-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Reguler;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+.fontBaloo {
+  font-family: Baloo;
+  font-size: 60px;
+  color: #7e544d;
+}
+
+.nav-text {
+  font-size: 15px;
+}
+.navbar-posi {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.intro-home {
+  line-height: 50px;
+}
+
+
+.card-small-text{
+  font-size: 12px;
+}
+
+.box {
+  box-shadow: 0 3px 6px 0 hsla(0, 0%, 69%, 0.16);
+  margin-top: -10%;
+  margin-bottom: 50px;
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+
+}
+
+.colorText-1 {
+  color: #35405a;
+  font-family: OpenSans-SemiBold;
+  /* font-size: 20px; */
+}
+.colorText-2 {
+  color: #2ED1A2;
+  font-family: OpenSans-SemiBold;
+  /* font-size: 20px; */
+}
+.about img{
+  border-radius: 5px;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.icon-category {
+  margin-top: 5px;
+  height: 50px;
+  background-size: 10px !important;
+}
+.icon-category img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+.medsos {
+  float: left;
+  margin-right: 30px;
+  margin-top: 75px;
+  width: 25;
+  height: 25;
+}
+
+
+.img-boundary {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.search input[type=search]{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.search{
+  position: relative;
+  width: 50%;
+}
+.search i{
+  position: absolute;
+  right:0;
+  top:0;
+  padding: 10px;
+  color:#aaa
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .medsos {
+    display: none;
+  }
+  
+  .intro-home {
+    display: none;
+  }
+  .nav-text {
+    font-size: 12px;
+  }
+  .search {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .search input[type=search]{
+    font-size: 12px;
+  }
+  
+  #home-logo {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
