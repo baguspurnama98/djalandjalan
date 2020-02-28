@@ -19,6 +19,7 @@
     <link href="{{ URL::asset('assets/css/heroic-features.css') }}" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- Navigation -->
     <div class="area-banner">
@@ -168,95 +169,24 @@
                 </div>
 
                 <div class="row as2">
+                    @foreach ($trip as $t)
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="strat">
                             <a href="#">
                                 <div class="card">
                                     <img src="{{ URL::asset('assets/assets/img/bromo.jpg') }}" class="card-img-top" alt="...">
                                     <div class="card-body" style="line-height: 10px; padding: 10px">
-                                        <h5 class="card-title colorText-2 ">Gunung Bromo</h5>
+                                        <h5 class="card-title colorText-2 ">{{ $t->place->name }}</h5>
                                         <p class="card-title colorText-1 ">Ryan / Malang</p>
                                         <p class="card-text card-small-text ">Tgl: <span>25 Agustus 2020 - 26 Agustus 2020</span></p>
                                         <p class="card-text card-small-text">Titik Kumpul: <span>Stasiun Malang</span></p>
                                         <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>4 orang lagi</span></small></p>
                                     </div>
                                 </div>
-
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="strat">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="{{ URL::asset('assets/assets/img/bromo.jpg') }}" class="card-img-top" alt="...">
-                                    <div class="card-body" style="line-height: 10px; padding: 10px">
-                                        <h5 class="card-title colorText-2 ">Gunung Bromo</h5>
-                                        <p class="card-title colorText-1 ">Ryan / Malang</p>
-                                        <p class="card-text card-small-text ">Tgl: <span>25 Agustus 2020 - 26 Agustus 2020</span></p>
-                                        <p class="card-text card-small-text">Titik Kumpul: <span>Stasiun Malang</span></p>
-                                        <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>4 orang lagi</span></small></p>
-                                    </div>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="strat">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="{{ URL::asset('assets/assets/img/bromo.jpg') }}" class="card-img-top" alt="...">
-                                    <div class="card-body" style="line-height: 10px; padding: 10px">
-                                        <h5 class="card-title colorText-2 ">Gunung Bromo</h5>
-                                        <p class="card-title colorText-1 ">Ryan / Malang</p>
-                                        <p class="card-text card-small-text ">Tgl: <span>25 Agustus 2020 - 26 Agustus 2020</span></p>
-                                        <p class="card-text card-small-text">Titik Kumpul: <span>Stasiun Malang</span></p>
-                                        <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>4 orang lagi</span></small></p>
-                                    </div>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="strat">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="{{ URL::asset('assets/assets/img/bromo.jpg') }}" class="card-img-top" alt="...">
-                                    <div class="card-body" style="line-height: 10px; padding: 10px">
-                                        <h5 class="card-title colorText-2 ">Gunung Bromo</h5>
-                                        <p class="card-title colorText-1 ">Ryan / Malang</p>
-                                        <p class="card-text card-small-text ">Tgl: <span>25 Agustus 2020 - 26 Agustus 2020</span></p>
-                                        <p class="card-text card-small-text">Titik Kumpul: <span>Stasiun Malang</span></p>
-                                        <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>4 orang lagi</span></small></p>
-                                    </div>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="strat">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="{{ URL::asset('assets/assets/img/bromo.jpg') }}" class="card-img-top" alt="...">
-                                    <div class="card-body" style="line-height: 10px; padding: 10px">
-                                        <h5 class="card-title colorText-2 ">Gunung Bromo</h5>
-                                        <p class="card-title colorText-1 ">Ryan / Malang</p>
-                                        <p class="card-text card-small-text ">Tgl: <span>25 Agustus 2020 - 26 Agustus 2020</span></p>
-                                        <p class="card-text card-small-text">Titik Kumpul: <span>Stasiun Malang</span></p>
-                                        <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>4 orang lagi</span></small></p>
-                                    </div>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
