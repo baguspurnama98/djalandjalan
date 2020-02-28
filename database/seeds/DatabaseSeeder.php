@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
             ]);
             DB::table('place')->insert([
                 'id' => $i,
-                'name' => $faker->name,
+                'name' => $faker->city,
                 'location' => $faker->address,
                 'description' => $faker->text($maxNbChars = 40),
             ]);
