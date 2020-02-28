@@ -177,10 +177,10 @@
                                     <img src="{{ URL::asset('assets/assets/img/bromo.jpg') }}" class="card-img-top" alt="...">
                                     <div class="card-body" style="line-height: 10px; padding: 10px">
                                         <h5 class="card-title colorText-2 ">{{ $t->place->name }}</h5>
-                                        <p class="card-title colorText-1 ">Ryan / Malang</p>
-                                        <p class="card-text card-small-text ">Tgl: <span>25 Agustus 2020 - 26 Agustus 2020</span></p>
-                                        <p class="card-text card-small-text">Titik Kumpul: <span>Stasiun Malang</span></p>
-                                        <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>4 orang lagi</span></small></p>
+                                        <p class="card-title colorText-1 ">{{ $t->user->full_name }} / {{ $t->place->name }}</p>
+                                        <p class="card-text card-small-text ">Tgl: <span>{{ date('d M Y', strtotime($t->depart_date)) }} - {{ date('d M Y', strtotime($t->return_date)) }}</span></p>
+                                        <p class="card-text card-small-text">Titik Kumpul: <span>{{ substr($t->gather_point,0,25) }}...</span></p>
+                                        <p class="card-text" style="float: right"><small class="text-muted">Butuh:<span>{{ $t->req_member }} orang lagi</span></small></p>
                                     </div>
                                 </div>
                             </a>
