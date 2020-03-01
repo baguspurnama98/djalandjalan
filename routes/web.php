@@ -16,7 +16,7 @@ Route::get('/partner/', 'DataController@partner');
 Route::get('/login', function(){
     return view('login');
 });
-Route::post('/login', 'Auth@login');
+Route::post('/login', 'AuthController@login');
 Route::get('/register', function(){
     return view('register');
 });
