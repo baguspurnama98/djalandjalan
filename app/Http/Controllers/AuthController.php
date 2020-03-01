@@ -14,8 +14,6 @@ class AuthController extends Controller
             'email' => ['required'],
             'password' => ['required'],
         ]);
-
-        //TODO: Try Attemps With Id and Password!!
         if (Auth::attempt($request->only('email', 'password'), $remember = false)) { // verify [email=>,pass=>,verify=>1]
             return redirect('/');
         } else {
