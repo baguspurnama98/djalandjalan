@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'DataController@landing');
-Route::get('/partner/', 'DataController@partner');
+Route::get('/partner', 'DataController@partner');
 Route::get('/login', function(){
     return view('login');
 });

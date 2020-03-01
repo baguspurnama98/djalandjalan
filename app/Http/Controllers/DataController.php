@@ -14,6 +14,6 @@ class DataController extends Controller
 
     public function partner(){
         $trip = Trip::with(['user','place'])->get();
-        return view('landing', ['trip' => $trip]);
+        return view('partner', ['trip' => $trip]);
     }
 }
