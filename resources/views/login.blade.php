@@ -4,7 +4,8 @@
 <div class="limiter" style="background-color: #2ED1A2;">
     <div class="container-login100">
         <div class="wrap-login100 p-l-50 p-r-50 p-t-30 p-b-30">
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" action="{{ url('/login') }}" method="POST">
+                @csrf
                 <span class="login100-form-title p-b-55">
                     <a href="{{ url('/') }}"><img src="{{ URL::asset('assets/assets/img/djalandjalanlogo.png') }}" style="width: 100%;"></a>
                 </span>
@@ -18,7 +19,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    <input class="input100" type="password" name="password" placeholder="Password">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <span class="lnr lnr-lock"></span>
@@ -26,7 +27,7 @@
                 </div>
 
                 <div class="container-login100-form-btn p-t-5">
-                    <button class="login100-form-btn">
+                    <button type="submit" class="login100-form-btn">
                         Masuk
                     </button>
                 </div>

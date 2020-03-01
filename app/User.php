@@ -16,4 +16,10 @@ class User extends Authenticatable
     public function trip(){
         return $this->hasMany('App\Trip');
     }
+
+    //* Merubah Password Field Default
+    // public function getAuthPassword()
+    // {
+    //     $this->namapasswordfieldelucok;
+    // }
 }
