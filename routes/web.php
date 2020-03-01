@@ -20,3 +20,4 @@ Route::post('/login', 'AuthController@login');
 Route::get('/register', function(){
     return view('register');
 });
+Route::post('/register', 'AuthController@register');
